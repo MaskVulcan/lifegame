@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>生命小游戏</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src='js/jquery-3.1.1.min.js'></script>
+        <link rel="Stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <div id="mocha">
+            <script type="text/javascript" src="js/control.js"></script>
+            <script type="text/javascript" src="./node_modules/mocha/mocha.js"></script>
+            <script type="text/javascript">
+                mocha.setup('bdd');
+            </script>
+            <script type="text/javascript" src="./node_modules/chai/chai.js"></script>
+            <script type="text/javascript">
+                var assert = chai.assert;
+            </script>
+            <script type="text/javascript" src = "js/control_test.js"></script>
+            <script type="text/javascript"> 
+                mocha.run();
+            </script>
+        </div>
+        <div>
+            <button id = "start">Start</button>
+            <button id = "stop">Stop</button>
+            <button id = "restart">Restart</button>
+            <p id = "data">Total: 1500     alive:</p>
+        </div>
+        <div>
+            <canvas id = "interface"></canvas>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/control.js"></script>
+</html>
